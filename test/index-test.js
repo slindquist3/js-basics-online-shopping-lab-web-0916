@@ -31,6 +31,7 @@ describe('#addToCart', function() {
 
 describe('#viewCart', function() {
   it("should print each item in the cart and their cost", function() {
+    // debugger;
     addToCart("socks");
     addToCart("puppy");
     addToCart("iPhone");
@@ -38,7 +39,7 @@ describe('#viewCart', function() {
     const socksCost = getCart()[0]["socks"];
     const puppyCost = getCart()[1]["puppy"];
     const iPhoneCost = getCart()[2]["iPhone"];
-
+    // debugger;
     viewCart();
 
     expect(console.log).toHaveBeenCalledWith(
